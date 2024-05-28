@@ -1,0 +1,10 @@
+<section  class="text-center my-4">
+    <h2 class="h3">Skills</h2>
+    <div *ngFor="let skill of skills" class="mb-3">
+      <h3 class="h5">{{ skill.category }}</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let detail of skill.details">{{ detail }}</li>
+      </ul>
+    </div>
+  </section>
+  
